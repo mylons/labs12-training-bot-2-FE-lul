@@ -30,9 +30,9 @@ So now we pass the project on to you, much more robust than we found it, and we 
 
 We've configured a one-click deploy to Netlify that will allow you to get the front end of the site up and running with a guided set up:
 
-**Note**: Make sure you've completed the [Auth0 section of the prerequisite docs](https://github.com/labs12-training-bot-2/labs12-training-bot-2-BE/blob/master/docs/prerequisites.md#configuring-auth0) in the [Training Bot API repository](https://github.com/labs12-training-bot-2/labs12-training-bot-2-BE)
+**Note**: Make sure you've completed the [Auth0 section of the prerequisite docs](https://github.com/mylons/labs12-training-bot-2-BE/blob/master/docs/prerequisites.md#configuring-auth0) in the [Training Bot API repository](https://github.com/mylons/labs12-training-bot-2-BE)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/labs12-training-bot-2/labs12-training-bot-2-FE)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mylons/labs12-training-bot-2-FE)
 
 ## Components
 
