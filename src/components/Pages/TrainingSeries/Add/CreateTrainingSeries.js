@@ -6,7 +6,7 @@ import { addTrainingSeries } from "store/actions/trainingSeriesActions";
 import ProgressCircle from "components/UI/Progress/ProgressCircle";
 
 import { withStyles } from "@material-ui/core/styles";
-import { Typography, Button, TextField, Divider, MenuItem, Select } from "@material-ui/core/";
+import { Typography, Button, TextField, Divider, MenuItem, Select, InputLabel } from "@material-ui/core/";
 
 import { styles, MainContainer } from "./CreateTrainingSeriesStyles.js";
 
@@ -78,17 +78,20 @@ class CreateTrainingSeries extends React.Component {
               margin="normal"
               required
             />
-            <Select
-              value={this.state.trainingType}
-              onChange={this.handleChange("trainingType")}
-              inputProps={{
-                name: 'trainingType',
-                id: 'training-type',
-              }}
-            >
-              <MenuItem value={'online'}>Online</MenuItem>
-              <MenuItem value={'in-person'}>In Person</MenuItem>
-            </Select>
+            <div>
+              <InputLabel>Training Type</InputLabel>
+              <Select
+                value={this.state.trainingType}
+                onChange={this.handleChange("trainingType")}
+                inputProps={{
+                  name: 'trainingType',
+                  id: 'training-type',
+                }}
+              >
+                <MenuItem value={'online'}>Online</MenuItem>
+                <MenuItem value={'in-person'}>In Person</MenuItem>
+              </Select>
+            </div>
             <div>
               <Button
                 type="submit"
