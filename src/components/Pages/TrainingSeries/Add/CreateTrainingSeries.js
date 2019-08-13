@@ -14,6 +14,7 @@ import InfoPopup from "components/UI/InfoPopup/InfoPopup.js";
 class CreateTrainingSeries extends React.Component {
   state = {
     title: "",
+    trainingType: "",  // online or in-person
     isRouting: false
   };
 
@@ -23,7 +24,7 @@ class CreateTrainingSeries extends React.Component {
 
   handleTrainingSeriesSubmit = e => {
     e.preventDefault();
-    const data = { title: this.state.title, user_id: this.props.user_id };
+    const data = { title: this.state.title, trainingType: this.state.trainingType, user_id: this.props.user_id };
     this.props.addTrainingSeries(data);
 
     this.setState({ isRouting: true });
@@ -76,6 +77,17 @@ class CreateTrainingSeries extends React.Component {
               margin="normal"
               required
             />
+            <Select
+              value={this.state.trainingType}
+              onChange={this.handleChange("trainingType")}
+              inputProps={{
+                name: 'trainingType',
+                id: 'training-type',
+              }}
+            >
+              <MenuItem value={'online'}>Online</MenuItem>
+              <MenuItem value={'in-person'}>In Person</MenuItem>
+            </Select>
             <div>
               <Button
                 type="submit"
