@@ -6,7 +6,8 @@ import { addTrainingSeries } from "store/actions/trainingSeriesActions";
 import ProgressCircle from "components/UI/Progress/ProgressCircle";
 
 import { withStyles } from "@material-ui/core/styles";
-import { Typography, Button, TextField, Divider } from "@material-ui/core/";
+import { Typography, Button, TextField, Divider, MenuItem, Select } from "@material-ui/core/";
+
 import { styles, MainContainer } from "./CreateTrainingSeriesStyles.js";
 
 import InfoPopup from "components/UI/InfoPopup/InfoPopup.js";
